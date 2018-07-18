@@ -14,4 +14,13 @@
     <Folder Include="ViewModel\" />
     <Folder Include="Model\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Data\CustomersDataAccess.cs" />
+    <Compile Remove="CustomersDataAccess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Xamarin.iOS">
+      <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.iOS.framework\Versions\Current\lib\mono\Xamarin.iOS\Xamarin.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>

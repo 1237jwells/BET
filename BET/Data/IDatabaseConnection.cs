@@ -1,10 +1,11 @@
 ﻿using System;
+using SQLite;
+using SQLitePCL;
+
 namespace BET.Data
 {
-    public class SQLite
+    public interface IDatabaseConnection
     {
-        public SQLite()
-        {
-        }
+        SQLite.SQLiteConnection DbConnection();
     }
 }
